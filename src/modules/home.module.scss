@@ -1,0 +1,127 @@
+@use 'App.module';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.home-container {
+  background-image: url('../assets/Hi Res Render - 1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+h3 {
+  color: App.$blue-300;
+  @include App.preset5;
+}
+
+h1 {
+  color: App.$white;
+  @include App.preset1;
+}
+
+p {
+  color: App.$blue-300;
+  @include App.preset9;
+}
+
+.explore-button {
+  color: App.$white;
+  width: 272px;
+  height: 272px;
+  top: 171px;
+  left: 201px;
+  border-radius: 999px;
+  gap: 100px;
+  border: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  @include App.preset4;
+
+  span {
+    color: App.$blue-900;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.navigation {
+  width: 1440px;
+  height: 136px;
+  position: relative;
+}
+
+.navigation-bar {
+  width: 736px;
+  height: 96px;
+  backdrop-filter: blur(80px);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+img {
+  position: absolute;
+  bottom: 25%;
+  left: 5%;
+}
+
+.number-nav {
+  width: 18px;
+  height: 19px;
+  @include App.preset8;
+  color: App.$white;
+}
+
+.text-nav {
+  width: 37px;
+  height: 19px;
+  @include App.preset8;
+  color: App.$white;
+}
+
+.button-container {
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: 0;
+}
+
+.button-nav {
+  height: 96px;
+  width: 150px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px App.$white;
+}
+
+.hero-container {
+  width: 1110px;
+  height: 632px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  button {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+  }
+
+  .text-container {
+    width: 540px;
+    height: 343px;
+    position: absolute;
+    top: 0;
+  }
+}

@@ -1,0 +1,161 @@
+@use 'App.module';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.destination-container {
+  background-image: url('../assets/Hi Res Render - 2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.navigation {
+  width: 1440px;
+  height: 136px;
+  position: relative;
+}
+
+.navigation-bar {
+  width: 736px;
+  height: 96px;
+  backdrop-filter: blur(80px);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+img {
+  position: absolute;
+  bottom: 25%;
+  left: 5%;
+}
+
+.number-nav {
+  width: 18px;
+  height: 19px;
+  @include App.preset8;
+  color: App.$white;
+}
+
+.text-nav {
+  width: 37px;
+  height: 19px;
+  @include App.preset8;
+  color: App.$white;
+}
+
+.button-container {
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: 0;
+}
+
+.button-nav {
+  height: 96px;
+  width: 150px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px App.$white;
+}
+
+.hero-container {
+  width: 1110px;
+  height: 632px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  h1 {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .number-header {
+    @include App.preset5;
+    opacity: 25%;
+  }
+
+  .text-header {
+    @include App.preset5;
+    color: App.$white;
+  }
+
+  img {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+  }
+
+  span {
+    @include App.preset8;
+    width: 35px;
+    height: 19px;
+    color: App.$blue-300;
+  }
+
+  .destination-button-container {
+    height: 32px;
+    width: 445px;
+    position: absolute;
+    top: 13%;
+    display: flex;
+    gap: 20px;
+    left: 60%;
+  }
+
+  .destination-button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .text-holder {
+    width: 445px;
+    height: 254px;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+
+    h1 {
+      @include App.preset2;
+    }
+
+    p {
+      @include App.preset9;
+    }
+
+    .distance-avg {
+      position: absolute;
+      top: 110%;
+    }
+
+    .travel-time {
+      position: absolute;
+      top: 110%;
+      right: 20%;
+    }
+
+    h3 {
+      @include App.preset6;
+      position: absolute;
+      top: 130%;
+    }
+
+    .travel {
+      position: absolute;
+      top: 130%;
+      right: 32%;
+    }
+  }
+}

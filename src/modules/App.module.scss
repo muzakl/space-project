@@ -1,0 +1,88 @@
+$blue-900: rgb(11, 13, 23);
+$blue-300: rgb(208, 214, 249);
+$white: #FFFFFF;
+@mixin preset1 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 144px;
+  line-height: 1.719;
+  letter-spacing: 0;
+}
+
+@mixin preset2 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+  line-height: 1.146;
+  letter-spacing: 0;
+}
+
+@mixin preset3 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 56px;
+  line-height: 0.642;
+  letter-spacing: 0;
+}
+
+@mixin preset4 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 0.367;
+  letter-spacing: 0;
+}
+
+@mixin preset5 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 0.336;
+  letter-spacing: 4px;
+}
+
+@mixin preset6 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 0.321;
+  letter-spacing: 0;
+}
+
+@mixin preset7 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 0.168;
+  letter-spacing: 2px;
+}
+
+@mixin preset8 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 0.192;
+  letter-spacing: 2px;
+}
+
+@mixin preset9 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
